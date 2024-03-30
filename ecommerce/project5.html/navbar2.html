@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+             font-family: 'Alata', sans-serif;
+             background-image:url("iphone-15.avif") ;
+             background-size:contain;
+             background-repeat: no-repeat;
+             width:100%;
+             height:900px;
+        }
+        header{
+            background-color:rgba(222, 222, 209, 0.637);
+            height:44px;
+            width:100%;
+            border:5px solid transparent;
+            
+        }
+        nav{
+            
+            
+         }
+        .navbar{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+           
+           
+         }
+        .nav-link a{
+            color:rgba(0, 0, 0, 0.621);
+            text-decoration: none;
+            font-size:15px;
+            line-height:40px;
+            padding:0px 10px;
+         }
+        .nav-link i{
+            color:rgba(0, 0, 0, 0.669)rg;
+            font-size:15px;
+        }
+        .nav-link a:hover{
+            color:rgba(0, 0, 0, 0.895);
+        }
+        .dropdown1:hover .dropdown-menu1{
+            display:block;
+        }
+       .dropdown-menu1{
+        background-color:white;
+        position:absolute;
+        left:0;
+        right:0;
+        height:400px;
+        display:none;
+        color:white;
+        }
+        .dropdown2:hover .dropdown-menu2{
+            display:block;
+        }
+       .dropdown-menu2{
+        background-image:url('mac.webp');
+        background-size: cover;
+        position:absolute;
+        left:0;
+        right:0;
+        height:600px;
+        display:none;
+        color:white;
+        }
+        .dropdown4:hover .dropdown-menu4 {
+            display:block;
+        }
+       .dropdown-menu3{
+        background-image:url('ipad.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:absolute;
+        left:0;
+        right:0;
+        height:600px;
+        display:none;
+        }
+       .dropdown3:hover .dropdown-menu3 {
+            display:block;
+        }
+       .dropdown-menu4{
+        background-image:url('tv.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:absolute;
+        left:0;
+        right:0;
+        height:600px;
+        display:none;
+        }
+        .text{
+          display:flex;
+          justify-content:space-evenly;
+          align-items: center;
+          margin-top:100px;
+    }
+    .dropdown5:hover .dropdown-menu5{
+            display:block;
+        }
+       .dropdown-menu5{
+        background-color:#FAF2D3;
+        border:5px solid transparent;
+        position:absolute;
+        left:0;
+        right:0;
+        height:400px;
+        display:none;
+        color:white;
+        }
+        .dropdown6:hover .dropdown-menu6 {
+            display:block;
+        }
+       .dropdown-menu6{
+        background-image:url('air bud.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:absolute;
+        left:0;
+        right:0;
+        height:600px;
+        display:none;
+        }
+       
+      .list{
+        position:absolute;
+        left:100px;
+        top:40px;
+        line-height: 35px;
+    }
+        .list p{
+         color:rgba(0, 0, 0, 0.637);
+    
+     }
+       .list h2{
+          color:black;
+    
+     }
+        .list1{
+        position:absolute;
+        left:300px;
+        top:50px;
+        
+     }
+     .list1 p{
+        line-height:20px;
+        color:rgba(0, 0, 0, 0.936);
+
+    }
+    #speacial1{
+        color:rgba(0, 0, 0, 0.578);
+        
+    }
+    #speacial2{
+        color:rgba(0, 0, 0, 0.573);
+    }
+    .list2{
+        position:absolute;
+        left:500px;
+        top:60px;
+
+    }
+    .list2 p{
+        line-height:20px;
+        color:rgba(0, 0, 0, 0.938);
+
+    }
+  
+
+
+
+      
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="navbar">
+                <div class="nav-link"><a href="#"><i class="fa-brands fa-apple"></i></a></div>
+                <div class="nav-link dropdown1"><a href="#">Store</a>
+                    <div class="dropdown-menu1">
+                        <div class="text">
+                            <span class="list">
+                                <p>shop</p>
+                                <h2>Shop the latest</h2>
+                                <h2>MAC</h2>
+                                <h2>iPAD</h2>
+                                <h2>iphone</h2>
+                                <h2>Apple Watch</h2>
+                                <h2>ACCESSORIES</h2>
+                              </span>
+                              <span class="list1">
+                                <p id="speacial1">quick lines</p>
+                                <p>find a store</p>
+                                <p>order status</p>
+                                <p>ways to buy</p>
+                                <p>university student offer</p>
+                            </span>
+                            <span class="list2">
+                                <p id="speacial2">shop speacial stores</p>
+                                <p>Eduacation</p>
+                                <p>Business</p>
+        
+                            </span>
+
+                        </div>
+                   
+                        
+                    </div>
+                </div>
+                <div class="nav-link dropdown2"><a href="#">Mac</a>
+                    <div class="dropdown-menu2"></div>
+                </div>
+                <div class="nav-link dropdown3"><a href="#">ipad</a>
+                    <div class="dropdown-menu3"></div>
+                </div>
+                <div class="nav-link dropdown4"><a href="#">iphone</a>
+                    <div class="dropdown-menu4"></div>
+                </div>
+                <div class="nav-link dropdown5"><a href="#">Watch</a>
+                    <div class="dropdown-menu5">
+                        <div class="text">
+                            <span class="list">
+                                <p>shop</p>
+                                <h2>Shop the latest</h2>
+                                <h2>MAC</h2>
+                                <h2>iPAD</h2>
+                                <h2>iphone</h2>
+                                <h2>Apple Watch</h2>
+                                <h2>ACCESSORIES</h2>
+                              </span>
+                              <span class="list1">
+                                <p id="speacial1">quick lines</p>
+                                <p>find a store</p>
+                                <p>order status</p>
+                                <p>ways to buy</p>
+                                <p>university student offer</p>
+                            </span>
+                            <span class="list2">
+                                <p id="speacial2">shop speacial stores</p>
+                                <p>Eduacation</p>
+                                <p>Business</p>
+        
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-link dropdown6"><a href="#">Airpods</a>
+                    <div class="dropdown-menu6">
+                       
+                       
+                      </div>
+                </div>
+                <div class="nav-link"><a href="#">TV&Home</a></div>
+                <div class="nav-link"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                <div class="nav-link"><a href="#"><i class="fa-brands fa-shopify"></i></a></div>
+            </div>
+        </nav>
+    </header>
+    
+</body>
+</html>

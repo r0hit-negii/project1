@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+            margin:0;
+        }
+        body{
+            background-color:rgba(0, 0, 0, 0.11) ;
+        }
+        header{
+            height:70px;
+            width:100%;
+            background-color:white;
+            border:1px solid rgba(0, 0, 0, 0.126);
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding:20px;
+        }
+        .text{
+
+        }
+        .text h1{
+             color:#2a55e5;
+             font-style: italic;
+        }
+        .text p{
+            color:#a49e9e;
+        }
+        .text2{
+            color:#ffc818;
+        }
+        .search-bar{
+            display:flex;
+            
+            
+        }
+        .search-input{
+              height:40px;
+              width:450px;
+              font-size:20px;
+              border:none;
+              background-color: #f0f5ff;
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              
+        }
+        .search-input:focus{
+            outline: none;
+        }
+        .search-icon i{
+            height:40px;
+            width:50px;
+            background-color: #f0f5ff;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:20px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+
+        }
+        .navbar{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .nav-link a{
+            text-decoration: none;
+            color:#212121;
+            font-size:20px;
+            padding:0px 15px;
+
+        }
+        .nav-link i{
+            padding:0px 5px;
+        }
+        .container{
+            height:150px;
+            width:1250px;
+            background-color: white;
+            margin:auto;
+            display:flex;
+            justify-content: space-between;
+            margin-top: 10px;
+           
+        }
+       
+        .box1{
+            height:150px;
+            width:130px;
+            padding:20px;
+            transition:500ms;
+            
+        }
+        .box1:hover{
+            transform: scale(1.4);
+        }
+        .box1 img{
+            height:64px;
+            width:64px;
+        }
+        .box2{
+            height:150px;
+            width:130px;
+            padding:20px;
+            transition:500ms;
+        }
+        .box2:hover{
+            transform: scale(1.4);
+        }
+        .box2 img{
+            height:64px;
+            width:64px;
+        }
+        .box3{
+            height:150px;
+            width:130px;
+            padding:20px;
+            transition:500ms;
+        }
+        .box3:hover{
+            transform: scale(1.4);
+        }
+        .box3 img{
+            height:64px;
+            width:64px;
+        }
+        .box4{
+            height:150px;
+            width:130px;
+            padding:20px;
+            transition:500ms;
+        }
+        .box4:hover{
+            transform: scale(1.4);
+        }
+        .box4 img{
+            height:64px;
+            width:64px;
+        }
+        .box5{
+            height:150px;
+            width:130px;
+            padding:20px;
+            transition:500ms;
+        }
+        .box5:hover{
+            transform: scale(1.4);
+        }
+        .box5 img{
+            height:64px;
+            width:64px;
+        }
+        .box6{
+            height:150px;
+            width:130px;
+            padding:20px;
+            transition:500ms;
+        }
+        .box6:hover{
+            transform: scale(1.4);
+        }
+        .box6 img{
+            height:64px;
+            width:64px;
+        }
+        .box7{
+            height:150px;
+            width:130px;
+            padding:20px;
+            transition:500ms;
+        }
+        .box7:hover{
+            transform: scale(1.4);
+        }
+        .box7 img{
+            height:64px;
+            width:64px;
+        }
+        .box8{
+            height:150px;
+            width:130px;
+            padding:20px;
+            transition:500ms;
+        }
+        .box8:hover{
+            transform: scale(1.4);
+        }
+        .box8 img{
+            height:64px;
+            width:64px;
+        }
+        .box9{
+            height:150px;
+            width:130px;
+            padding:20px;
+            transition:500ms;
+        }
+        .box9:hover{
+            transform: scale(1.4);
+        }
+        .box9 img{
+            height:64px;
+            width:64px;
+        }
+        .container1{
+            height:175px;
+            width:1250px;
+            background-color: white;
+            margin:auto;
+            background-image: url('background1.webp');
+            background-size: cover;
+            background-position: center;
+        }
+      
+        .container2{
+            padding:0px 10px;
+            margin:auto;
+            display:flex;
+            justify-content: space-between;
+
+        }
+        .img-box1{
+            background-image: url('image1.webp');
+            background-size: cover;
+            height:200px;
+            width:390px;
+
+        }
+        .img-box2{
+            background-image: url('image2.webp');
+            background-size: cover;
+            height:200px;
+            width:390px;
+
+        }
+        .img-box3{
+            background-image: url('image3.webp');
+            background-size: cover;
+            height:200px;
+            width:390px;
+
+        }
+        .container3{
+            height:350px;
+            width: 1250px;
+            margin:auto;
+            padding:5px;
+            background-color: white;
+            
+        }
+        .heading h2{
+            padding:15px;
+        }
+        .boxex{
+            display:flex;
+            justify-content:space-evenly
+        }
+        .mobile1{
+            width:160px;
+            height:240px;
+            padding:6px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .mobile1 img{
+            height: 180px;
+            width:160px;
+            padding:15px;           
+        }
+        
+        .mobile2{
+            width:160px;
+            height:240px;
+            padding:6px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .mobile2 img{
+            height: 180px;
+            width:160px;
+            padding:15px;           
+        }
+        
+        .mobile3{
+            width:160px;
+            height:240px;
+            padding:6px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .mobile3 img{
+            height: 180px;
+            width:160px;
+            padding:15px;           
+        }
+        .mobile4{
+            width:160px;
+            height:240px;
+            padding:6px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .mobile4 img{
+            height: 180px;
+            width:160px;
+            padding:15px;           
+        }
+        .mobile5{
+            width:160px;
+            height:240px;
+            padding:6px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .mobile5 img{
+            height: 180px;
+            width:160px;
+            padding:15px;           
+        }
+        .mobile6{
+            width:160px;
+            height:240px;
+            padding:6px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .mobile6 img{
+            height: 180px;
+            width:160px;
+            padding:15px;           
+        }
+        
+        .text p{
+            font-size:15px;
+            
+        }
+        .text h2{
+            font-size:15px;
+            margin-top:10px;
+        }
+        .shoes1{
+            width:160px;
+            height:240px;
+            padding:2px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .shoes1 img{
+            height: 170px;
+            width:150px;
+            padding:10px;           
+        }
+        .shoes2{
+            width:160px;
+            height:240px;
+            padding:2px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .shoes2 img{
+            height: 170px;
+            width:150px;
+            padding:10px;           
+        }
+        .shoes3{
+            width:160px;
+            height:240px;
+            padding:2px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .shoes3 img{
+            height: 170px;
+            width:150px;
+            padding:10px;           
+        }
+        .shoes4{
+            width:160px;
+            height:240px;
+            padding:2px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .shoes4 img{
+            height: 170px;
+            width:150px;
+            padding:10px;           
+        }
+        .shoes5{
+            width:160px;
+            height:240px;
+            padding:2px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .shoes5 img{
+            height: 170px;
+            width:150px;
+            padding:10px;           
+        }
+        .shoes6{
+            width:160px;
+            height:240px;
+            padding:2px;
+            border:1px solid rgba(0, 0, 0, 0.313);
+            border-radius:5px;
+            margin-top:15px;
+            text-align: center;
+        }
+        .shoes6 img{
+            height: 170px;
+            width:150px;
+            padding:10px;           
+        }
+        .container4{
+            height:600px;
+            width:450px;
+            background-color: white;
+            padding:10px;
+           
+        }
+        .mini-box1{
+            display:flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+      
+        .boxex-1{
+            height:250px;
+            width:200px;
+            border:1px solid rgba(0, 0, 0, 0.258);
+            border-radius:5px;
+            padding:10px;
+        }
+        .watch img{
+            height: 180px;
+            width: 180px;
+        }
+        .text1{
+            text-align: center;
+        }
+        .text1 h2{
+            color:#108934;
+        }
+        .boxex-2{
+            height:250px;
+            width:200px;
+            border:1px solid rgba(0, 0, 0, 0.258);
+            border-radius:5px;
+            padding:10px;
+        }
+        .t-shirt img{
+            height: 180px;
+            width: 180px;
+        }
+        .mini-box2{
+              display:flex;
+              justify-content: space-evenly;
+              margin-top:10px;
+        }
+        
+        .boxex-3{
+             height:250px;
+             width:200px;
+             border:1px solid rgba(0, 0, 0, 0.258);
+             border-radius:5px;
+             padding:10px;
+        }
+        .Wallets img{
+            height: 180px;
+            width: 180px;
+        }
+        .boxex-4{
+             height:250px;
+             width:200px;
+             border:1px solid rgba(0, 0, 0, 0.258);
+            border-radius:5px;
+            padding:10px;
+        } 
+        .belt img{
+            height: 180px;
+            width: 180px;
+        } 
+        .large-container{
+            display:flex;
+            justify-content: space-between;
+        }
+        .boxex-5{
+            height:600px;
+            width:750px;
+            background-color: white;
+            padding:0px 10px;
+            background-image:url('background2.webp');
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          
+        }
+        .container5{
+           display:flex;
+        }
+      
+        .large-container1{
+            height:350px;
+            width:100vw;
+            background-color:#172337;
+            padding:30px 0px;
+            
+        }
+        
+        .list li{
+            color:white;
+            list-style:none;
+
+        }
+        .list .mini-list{
+            color:#878787;
+            margin-bottom: 5px;
+        }
+        .content {
+            display:flex;
+            justify-content:space-evenly;
+            padding:20px;
+           
+           
+        }
+        .content a{
+            text-decoration: none;
+            color:white;
+            
+        }
+       .content i{
+            color:#e5c433;
+            margin:0px 5px;
+            font-size:13px;
+        }
+        
+        
+       
+        
+        </style>
+</head>
+<body>
+    <header>
+        <div class="text">
+            <h1>Flipkart</h1>
+            <p>Explore <span class="text2">plus</span></p>
+
+        </div>
+        
+     <div class="search-bar">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+           
+        </div>
+        <div>
+            <input  class="search-input" placeholder="Search for products,Brands and more">
+            
+        </div>
+     </div>
+
+        <div class="navbar">
+            <div class="nav-link"><a href="#"><i class="fa-solid fa-shop"></i>Become a seller</a></div>
+            <div class="nav-link"><a href="#"><i class="fa-regular fa-user"></i>Sign in</a></div>
+            <div class="nav-link"><a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a></div>
+            <div class="nav-link"><a href="#"><i class="fa-solid fa-bars"></i></a></div>
+        </div>
+          
+    </header>
+    
+    
+
+    <div class="container">
+        <div class="box1">
+            <a href="#"><img src="box1.webp"></a>
+            <p>Grocery</p>
+
+        </div>
+        <div class="box2">
+            <a href="#"><img src="box2.webp"></a>
+            <p>Mobiles</p>
+
+        </div>
+        <div class="box3">
+            <a href="#"><img src="box3.webp"></a>
+            <p>Fashion</p>
+
+        </div>
+        <div class="box4">
+            <a href="#"><img src="box4.webp"></a>
+            <p>Electronics</p>
+
+        </div>
+        <div class="box5">
+            <a href="#"><img src="box5.webp"></a>
+            <p>Home & Furniture</p>
+
+        </div>
+        <div class="box6">
+            <a href="#"><img src="box1.webp"></a>
+            <p>Appliances</p>
+
+        </div>
+        <div class="box7">
+            <a href="#"><img src="box7.webp"></a>
+            <p>Travel</p>
+
+        </div>
+        <div class="box8">
+            <a href="#"><img src="box8.webp"></a>
+            <p>Beauty,toys and more</p>
+
+        </div>
+        <div class="box9">
+            <a href="#"><img src="box9.webp"></a>
+            <p>Two wheelers</p>
+
+        </div>
+
+    </div>
+    <br>
+    <div class="container1">
+
+    </div>
+    <br>
+
+    <div class="container2">
+
+        <div class="img-box1">
+
+        </div>
+        <div class="img-box2">
+
+        </div>
+
+        <div class="img-box3">
+
+        </div>
+
+    </div>
+    <br>
+
+    <div class="container3">
+        <div class="heading">
+            <h2>Best Mobiles</h2>
+        </div>
+        <div class="boxex">
+            <div class="mobile1">
+                <div>
+                    <img src="m1.jpg">
+                    
+                </div>
+                <div class="text">
+                  <p>Google pixel 7A</p>
+                  <h2>incl of offers </h2>
+               </div>
+        
+            </div>
+            <div class="mobile2">
+                  <div>
+                        <img src="m2.jpeg">
+                        
+                    </div>
+                    <div class="text">
+                      <p>Samsung S22 5G</p>
+                      <h2>incl of offers </h2>
+                   </div>
+            
+             </div>
+    
+            <div class="mobile3">
+                <div>
+                    <img src="m3.webp">
+                    
+                </div>
+                <div class="text">
+                  <p>Motorola Edge 40</p>
+                  <h2>incl of offers </h2>
+               </div>
+        
+            </div>
+    
+            <div class="mobile4">
+                <div>
+                    <img src="m4.webp">
+                    
+                </div>
+                <div class="text">
+                  <p>Samsung S21 FE</p>
+                  <h2>incl of offers </h2>
+               </div>
+        
+            </div>
+    
+            <div class="mobile5">
+                <div>
+                    <img src="m5.webp">
+                    
+                </div>
+                <div class="text">
+                  <p>Realme 11 pro 5GB</p>
+                  <h2>incl of offers </h2>
+               </div>
+        
+            </div>
+    
+            <div class="mobile6">
+                <div>
+                    <img src="m6.webp">
+                    
+                </div>
+                <div class="text">
+                  <p>Poco X pro 5GB</p>
+                  <h2>incl of offers </h2>
+               </div>
+        
+            </div>
+    
+    
+            </div>
+
+        </div>
+        <br>
+
+        <div class="container3">
+            <div class="heading">
+                <h2>Top Deals</h2>
+            </div>
+            <div class="boxex">
+                <div class="shoes1">
+                    <div>
+                        <img src="s1.webp">
+                        
+                    </div>
+                    <div class="text">
+                      <p>Puma,new Balance & more</p>
+                      <h2>Min. 60-80% off </h2>
+                   </div>
+            
+                </div>
+                <div class="shoes2">
+                      <div>
+                            <img src="s2.jpg">
+                            
+                        </div>
+                        <div class="text">
+                          <p>Adidas,skechers & more</p>
+                          <h2>Min. 60-80% off  </h2>
+                       </div>
+                
+                 </div>
+        
+                <div class="shoes3">
+                    <div>
+                        <img src="s3.webp">
+                        
+                    </div>
+                    <div class="text">
+                      <p>Nike</p>
+                      <h2>Min. 50-60% off </h2>
+                   </div>
+            
+                </div>
+        
+                <div class="shoes4">
+                    <div>
+                        <img src="s4.webp">
+                        
+                    </div>
+                    <div class="text">
+                      <p>Red tape,wildcraft</p>
+                      <h2>Min. 60-80% off  </h2>
+                   </div>
+            
+                </div>
+        
+                <div class="shoes5">
+                    <div>
+                        <img src="s5.webp">
+                        
+                    </div>
+                    <div class="text">
+                      <p>HRX FILA & more</p>
+                      <h2>Min. 40-50% off </h2>
+                   </div>
+            
+                </div>
+        
+                <div class="shoes6">
+                    <div>
+                        <img src="s6.jpg">
+                        
+                    </div>
+                    <div class="text">
+                      <p>Woodland,wildcraft</p>
+                      <h2> Min. 60-80% off </h2>
+                   </div>
+            
+                </div>
+        
+        
+            </div>
+            <br>
+            <br>
+            <div class="large-container">
+                <div class="container4">
+                    <div>
+                        <h1>Festive wear</h1>
+                    </div>
+                    <div class="mini-box1">
+                        <div class="boxex-1">
+                            <div class="watch">
+                                <img src="w1.webp">
+                            </div>
+                            <div class="text1">
+                                <p>Watches</p>
+                                <h2>Min. 90% off</h2>
+                            </div>
+                        </div>
+                            
+                        <div class="boxex-2">
+                            <div class="t-shirt">
+                                <img src="ts1.jpg">
+                            </div>
+                            <div class="text1">
+                                <p>Men's T-Shirts</p>
+                                <h2>Min. 50% off</h2>
+                            </div>
+                         </div>
+                        
+                   </div>
+    
+                    <div class="mini-box2">
+                        <div class="boxex-3">
+                            <div class="Wallets">
+                                <img src="wl1.jpeg">
+                            </div>
+                            <div class="text1">
+                                <p>Wallets</p>
+                                <h2>Min. 70% off</h2>
+                            </div>
+                       </div>
+    
+                         <div class="boxex-4">
+                            <div class="belt">
+                                <img src="blt1.jpeg">
+                            </div>
+                            <div class="text1">
+                                <p>Belts</p>
+                                <h2>Min. 50% off</h2>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+
+                    <br>
+                    <br>
+                    <div class="boxex-5">
+
+                    </div>
+          </div>
+
+          <br>
+          <br>
+
+          <fotter>
+             
+                <div class="large-container1">
+                    <div class="container5">
+                        <div class="list">
+                            <ul>
+                                <li  class="mini-list">HELP</li>
+                                <li>contact us</li>
+                                <li>about us</li>
+                                <li>careers</li>
+                                <li>flipkart stories</li>
+                                <li>press</li>
+                                <li>flipkart wholesale</li>
+                                <li>clear tip</li>
+                                <li>corporate information</li>
+                            </ul>
+        
+    
+                        </div>
+                        <div class="list">
+                        
+                            <ul>
+                                <li  class="mini-list">ABOUT</li>
+                                <li>contact us</li>
+                                <li>about us</li>
+                                <li>careers</li>
+                                <li>flipkart stories</li>
+                                <li>press</li>
+                                <li>flipkart wholesale</li>
+                                <li>clear tip</li>
+                                <li>corporate information</li>
+                            </ul>
+    
+                        </div>
+    
+                        <div class="list">
+                        
+                            <ul>
+                                <li  class="mini-list">SOCIAL</li>
+                                <li>contact us</li>
+                                <li>about us</li>
+                                <li>careers</li>
+                                <li>flipkart stories</li>
+                                <li>press</li>
+                                <li>flipkart wholesale</li>
+                                <li>clear tip</li>
+                                <li>corporate information</li>
+                            </ul>
+    
+                        </div>
+                        <div class="list">
+                        
+                            <ul>
+                                <li  class="mini-list">CONSUMER POLICY</li>
+                                <li>contact us</li>
+                                <li>about us</li>
+                                <li>careers</li>
+                                <li>flipkart stories</li>
+                                <li>press</li>
+                                <li>flipkart wholesale</li>
+                                <li>clear tip</li>
+                                <li>corporate information</li>
+                            </ul>
+    
+                        </div>
+                        <div class="list">
+                        
+                            <ul>
+                                <li class="mini-list">HELP</li>
+                                <li>contact us</li>
+                                <li>about us</li>
+                                <li>careers</li>
+                                <li>flipkart stories</li>
+                                <li>press</li>
+                                <li>flipkart wholesale</li>
+                                <li>clear tip</li>
+                                <li>corporate information</li>
+                            </ul>
+    
+                        </div>
+                        <div class="list">
+                        
+                            <ul>
+                                <li class="mini-list">HELP</li>
+                                <li>contact us</li>
+                                <li>about us</li>
+                                <li>careers</li>
+                                <li>flipkart stories</li>
+                                <li>press</li>
+                                <li>flipkart wholesale</li>
+                                <li>clear tip</li>
+                                <li>corporate information</li>
+                            </ul>
+    
+                        </div>
+                        <div class="list">
+                        
+                            <ul>
+                                <li class="mini-list">HELP</li>
+                                <li>contact us</li>
+                                <li>about us</li>
+                                <li>careers</li>
+                                <li>flipkart stories</li>
+                                <li>press</li>
+                                <li>flipkart wholesale</li>
+                                <li>clear tip</li>
+                                <li>corporate information</li>
+                            </ul>
+                        </div>
+                     </div>
+                     <br>
+                     <br>
+                     <hr>
+                     <div class="content">
+                        <div><a href="#"><i class="fa-solid fa-shop"></i>Become a seller</a></div>
+                        <div><a href="#"><i class="fa-solid fa-rectangle-ad"></i>Advertise</a></div>
+                        <div><a href="#"><i class="fa-solid fa-gift"></i>Gift cards</a></div>
+                        <div><a href="#"><i class="fa-solid fa-handshake-angle"></i>Help center</a></div>
+                        <div><a href="#">&#169; 2007-2023 flipkart.com</a></div>
+
+                     </div>
+             </div>
+                
+                
+             
+             
+
+          </fotter>
+             
+        
+
+               
+      
+      
+
+
+
+       
+
+    </div>
+     
+
+    
+</body>
+</html>
